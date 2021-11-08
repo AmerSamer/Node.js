@@ -1,8 +1,8 @@
 const fs = require('fs');
 const users = require('./user.js');
 
-const addUsr = users.addUser()
-const removeUsr = users.removeUser("bxmeady4kvqkonbt")
+// const addUsr = users.addUser()
+// const removeUsr = users.removeUser("")
+// const updateUsr = users.updateUser("bxmeabfckvr4e8dw")
+const readUsr = users.readUser()
 
-// const userJson = JSON.stringify(addUsr)
-// fs.writeFileSync('users/users.json', userJson)
