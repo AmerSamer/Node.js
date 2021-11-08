@@ -18,7 +18,10 @@
   "homepage": "https://github.com/AmerSamer/Node.js#readme",
   "dependencies": {
     "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
     "chalk": "^4.1.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14",
     "request": "^2.88.2",
     "uniqid": "^5.4.0",
     "validator": "^13.7.0"
