@@ -50,10 +50,10 @@ app.post('/', (req, res) => {
 app.put('/:jumperId', (req, res) => {
     const { jumperId } = req.params
     const { jump1, jump2, jump3 } = req.body;
-    itemsModel.findByIdAndUpdate(jumperId, { jump1: jump1, jump2: jump2, jump3: jump3 }, (err, data) => {
+    itemsModel.findByIdAndUpdate(jumperId, { jump1: jump1, jump2: jump2, jump3: jump3 },{new:true}, (err, data) => {
         if (err) throw err;
         if (data) {
-            return res.status(200).json({ success: 'Updated Successfully' })
+            return res.status(200).json({ success: data })
         }
         return res.status(400).json({ itemNotFound: 'Item not found' })
     })
